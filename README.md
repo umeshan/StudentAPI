@@ -9,34 +9,22 @@ The page will reload if you make edits.
 
 Open [http://localhost:{port}/city](http://localhost:{port}/city)
 
-### Add User API
+### Add Student API
 
 Open [http://localhost:{port}/students/add](http://localhost:{port}/students/add)
 
-### List User API
+### List Student(s) API
 
 Open [http://localhost:{port}/students/list](http://localhost:{port}/students/list)
 
-### Update User API
+### Update Student API
 
 Open [http://localhost:{port}/students/update](http://localhost:{port}/students/update)
 
-### Delete User API
+### Delete Student API
 
 Open [http://localhost:{port}/students/delete](http://localhost:{port}/students/delete)
 
-### Sample JSON
+### Sample Student list
 
-{
-"students": [
-{
-"firstName": "First update",
-"lastName": "User",
-"regNo": 1,
-"gender": "Male",
-"city": "chennai",
-"zip": 111111,
-"id": 1
-}
-]
-}
+`[{ "firstName": "David", "lastName": "John", "regNo": 101, "gender": "Male", "city": "Chennai", "zip": 600002, "id":1 }]`
