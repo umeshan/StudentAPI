@@ -38,6 +38,7 @@
         <th>API</th>
         <th>Method</th>
         <th>Description</th>
+        <th>Sample Data</th>
       </tr>
       <tr>
         <td>1.</td>
@@ -46,6 +47,7 @@
         </td>
         <td>GET</td>
         <td>Provides city data</td>
+        <td><a href="#listCity">List City</a></td>
       </tr>
       <tr>
         <td>2.</td>
@@ -56,6 +58,7 @@
         </td>
         <td>GET</td>
         <td>List student record(s)</td>
+        <td><a href="#listStudent">Student List</a></td>
       </tr>
       <tr>
         <td>3.</td>
@@ -66,6 +69,7 @@
         </td>
         <td>POST</td>
         <td>Add a new student</td>
+        <td><a href="#addStudent">Add Student</a></td>
       </tr>
       <tr>
         <td>4.</td>
@@ -76,6 +80,7 @@
         </td>
         <td>POST</td>
         <td>Update student record</td>
+        <td><a href="#updateStudent">Update Student</a></td>
       </tr>
       <tr>
         <td>5.</td>
@@ -86,12 +91,27 @@
         </td>
         <td>POST</td>
         <td>Delete student record</td>
+        <td><a href="#deleteStudent">Delete Student</a></td>
       </tr>
     </table>
 
     
     <h2>Sample Data</h2>
-    <h3>Add Student: </h3>
+    <h3 id="listCity"> List City</h3>
+    <pre>
+      <code>
+        [
+          {
+            "id":"409","name":"Arakkonam","state":"Tamil Nadu"
+          },
+          {
+            "id":"374","name":"Aruppukkottai","state":"Tamil Nadu"
+          }
+        ]
+      </code>
+    </pre>
+
+    <h3 id="addStudent">Add Student: </h3>
     <pre>
       <code>
       {
@@ -104,7 +124,7 @@
       }
         </code>
     </pre>
-    <h3>Student list: </h3>
+    <h3 id="listStudent">Student list: </h3>
     <pre>
       <code>
        [{
@@ -118,7 +138,7 @@
         }]
         </code>
     </pre>
-    <h3>Update Student: </h3>
+    <h3 id="updateStudent">Update Student: </h3>
     <pre>
       <code>
         {
@@ -132,7 +152,7 @@
         }
         </code>
     </pre>
-    <h3>Delete Student: </h3>
+    <h3 id="deleteStudent">Delete Student: </h3>
     <pre>
       <code>
         {
