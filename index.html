@@ -1,0 +1,107 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .head {
+        font-weight: bold;
+      }
+      table {
+        border-collapse: collapse;
+        width:100%;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+      th,
+      td {
+        padding: 10px;
+        text-align: center;
+      }
+      pre{
+        background: #444444;
+        color:white;
+        font-weight: bold;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+      <h1>Welcome!!!</h1>
+    <h2>List of APIS:</h1>
+    <table>
+      <tr>
+        <td>&nbsp;</td>
+        <th>API</th>
+        <th>Method</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>1.</td>
+        <td>
+          <a target ="_new" href="https://studentapiinnodejs.herokuapp.com/city">City</a>
+        </td>
+        <td>GET</td>
+        <td>Provides city data</td>
+      </tr>
+      <tr>
+        <td>2.</td>
+        <td>
+          <a target ="_new" href="https://studentapiinnodejs.herokuapp.com/students/list"
+            >List</a
+          >
+        </td>
+        <td>GET</td>
+        <td>List student record(s)</td>
+      </tr>
+      <tr>
+        <td>3.</td>
+        <td>
+          <a target ="_new" href="https://studentapiinnodejs.herokuapp.com/students/add"
+            >Add</a
+          >
+        </td>
+        <td>POST</td>
+        <td>Add a new student</td>
+      </tr>
+      <tr>
+        <td>4.</td>
+        <td>
+          <a target ="_new" href="https://studentapiinnodejs.herokuapp.com/students/update"
+            >Update</a
+          >
+        </td>
+        <td>POST</td>
+        <td>Update student record</td>
+      </tr>
+      <tr>
+        <td>5.</td>
+        <td>
+          <a target ="_new" href="https://studentapiinnodejs.herokuapp.com/students/delete"
+            >Delete</a
+          >
+        </td>
+        <td>POST</td>
+        <td>Delete student record</td>
+      </tr>
+    </table>
+    <h2>Sample student list: </h2>
+    <pre>
+      <code>
+        {
+          "students": [{
+            "firstName": "John",
+            "lastName": "Lee",
+            "regNo": 100,
+            "gender": "Male",
+            "city": "Chennai",
+            "zip": 600001,
+          }]
+        }
+        </code>
+    </pre>
+  </body>
+</html>

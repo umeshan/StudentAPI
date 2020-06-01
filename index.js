@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+const path = require("path");
 const fs = require("fs");
 const student = require("./routes/students");
 const bodyParser = require("body-parser");
@@ -14,7 +15,7 @@ app.use(bodyParser.json());
 app.use("/students", student);
 
 app.get("/", async (req, res) => {
-  res.send("**** Server is Up ****");
+  res.sendFile(path.join(__dirname + "/index.html"));
 });
 
 // City Api
