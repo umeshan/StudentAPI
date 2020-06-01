@@ -24,8 +24,8 @@
       pre{
         background: #444444;
         color:white;
-        font-weight: bold;
-        font-size: 16px;
+        font-weight: 600;
+        font-size: 18px;
       }
     </style>
   </head>
@@ -88,18 +88,55 @@
         <td>Delete student record</td>
       </tr>
     </table>
-    <h2>Sample student list: </h2>
+
+    
+    <h2>Sample Data</h2>
+    <h3>Add Student: </h3>
+    <pre>
+      <code>
+      {
+        "firstName": "David",
+        "lastName": "John",
+        "regNo": 101,
+        "gender": "Male",
+        "city": "Chennai",
+        "zip": 600002
+      }
+        </code>
+    </pre>
+    <h3>Student list: </h3>
+    <pre>
+      <code>
+       [{
+          "firstName": "David",
+          "lastName": "John",
+          "regNo": 101,
+          "gender": "Male",
+          "city": "Chennai",
+          "zip": 600002,
+          "id":1
+        }]
+        </code>
+    </pre>
+    <h3>Update Student: </h3>
     <pre>
       <code>
         {
-          "students": [{
-            "firstName": "John",
-            "lastName": "Lee",
-            "regNo": 100,
-            "gender": "Male",
-            "city": "Chennai",
-            "zip": 600001,
-          }]
+          "firstName": "John",
+          "lastName": "David",
+          "regNo": 101,
+          "gender": "Male",
+          "city": "Hosur",
+          "zip": 601204,
+          "id":1
+        }
+        </code>
+    </pre>
+    <h3>Delete Student: </h3>
+    <pre>
+      <code>
+        {
+          "id":1
         }
         </code>
     </pre>
