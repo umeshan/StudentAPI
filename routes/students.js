@@ -28,6 +28,25 @@ router.get("/list", async (req, res) => {
   res.send(json.students);
 });
 
+// GET SPECIFIC POST
+router.get("/:id", async (req, res) => {
+  const { students } = json;
+  if (req.params && req.params.id) {
+    const studentRecord = students.filter(
+      (student) => student.id === parseInt(req.params.id)
+    );
+    if (studentRecord.length > 0) {
+      res.send(studentRecord);
+    } else {
+      res
+        .status(messages.error.statusCode)
+        .send(messages.error.studentNotExist);
+    }
+  } else {
+    res.status(messages.error.badRequest).send(messages.error.request);
+  }
+});
+
 // Add Student
 router.post("/add", async (req, res) => {
   if (
