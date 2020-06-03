@@ -1,3 +1,22 @@
 {
-    "students": []
+    "students": [
+        {
+            "firstName": "SRIVIDHYA",
+            "lastName": "ANNA DURAI",
+            "regNo": 12345,
+            "gender": "female",
+            "city": "Chennai",
+            "zip": 12345,
+            "id": 1
+        },
+        {
+            "firstName": "MOHANRAJ ",
+            "lastName": "ANNA DURAI",
+            "regNo": 4433,
+            "gender": "male",
+            "city": "Chennai",
+            "zip": 12345,
+            "id": 2
+        }
+    ]
 }
