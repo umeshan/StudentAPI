@@ -29,14 +29,14 @@ router.get("/list", async (req, res) => {
 });
 
 // GET SPECIFIC POST
-router.get("/:id", async (req, res) => {
+router.get("/list/:id", async (req, res) => {
   const { students } = json;
   if (req.params && req.params.id) {
     const studentRecord = students.filter(
       (student) => student.id === parseInt(req.params.id)
     );
     if (studentRecord.length > 0) {
-      res.send(studentRecord);
+      res.send(studentRecord[0]);
     } else {
       res
         .status(messages.error.statusCode)
